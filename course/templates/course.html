@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <title> AkiraChix Registration</title>
+</head>
+
+<body>
+    <div class="form">
+        <img id="image"src="https://o.remove.bg/downloads/e4750be7-92ce-4508-ac74-0a0a3dd9ca87/AKIRACHIX_LOGO.png-removebg-preview.png">
+        <h1>codeHive course Form</h1>
+
+        <form method="POST" enctype="multipart/form-data">
+            {{form.as_p}}
+            {%csrf_token%}
+            <button type="submit" value="save">SUBMIT</button>
+        </form>
+    </div>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-size: 15px;
+            font-weight: bold;
+            background: rgb(232, 224, 248);
+            background-repeat: no-repeat;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        #image {
+            width: 200px;
+        }
+
+        h1 {
+            font-size: px;
+            text-align: center;
+            padding-top: 12px;
+            color: purple;
+        }
+
+        input {
+            width: 100%;
+            border: 1px solid;
+            font-size: 15px;
+            padding: 8px 10px;
+            border-radius: 10px;
+            border: solid purple 1px;
+            background-color: whitesmoke;
+        }
+
+
+        .form {
+            margin: 5% auto 0 auto;
+            padding: 30px;
+            width: 800px;
+            height: auto;
+            overflow: hidden;
+            background-color: whitesmoke;
+            border-radius: 10px;
+        }
+
+
+
+        button {
+            border: solid purple 1px;
+            color: purple;
+            font-size: 20px;
+            width: 102.5%;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background: purple;
+            color: whitesmoke;
+        }
+
+        select {
+            width: 100%;
+            border: solid purple 1px;
+            font-size: 15px;
+            padding: 8px 10px;
+            border-radius: 10px;
+            width: 102.5%;
+        }
+    </style>
+</body>
+
+</html>
